@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Link Educational Consult</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      background-image: url('bg.jpg'); /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header p {
+      margin: 5px 0 0;
+    }
+
+    /* Logo Section */
+    #logo {
+      text-align: center;
+      margin: 20px 0;
+      animation: fadeIn 2.5s ease-in-out; /* Fade-in animation */
+    }
+
+    #logo img {
+      max-width: 200px; /* Adjust the size of your logo */
+      height: auto;
+    }
+
+    /* Contact Information */
+    #contact-info {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 18px;
+      color: #007BFF;
+      font-weight: bold;
+      animation: fadeIn 3s ease-in-out; /* Fade-in animation */
+    }
+
+    /* Registration Section */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: rgba(122, 246, 255, 0.9); /* Semi-transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+    }
+
+    h2 {
+      color: #007BFF;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: #f4f4f4;
+      margin: 5px 0;
+      padding: 20px;
+      border-radius: 4px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+    }
+
+    input, select, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Button hover animation */
+    }
+
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent footer */
+      color: white;
+      position: ;
+      bottom: 0;
+      width: 100%;
+      animation: fadeIn 10s ease-in-out; /* Fade-in animation */
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* Keyframes for Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- Link to your homepage -->
+      <li><a href="#registration">Register</a></li> <!-- Link to the registration section -->
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Success Link Educational Consult</h1>
+    <p>Experts In Educational Assessment</p>
+  </header>
+
+  <!-- Logo Section -->
+  <div id="logo">
+    <img src="logo.jpg" alt="Success Link Educational Consult Logo">
+  </div>
+
+  <!-- Contact Information -->
+  <div id="contact-info">
+    Contact Us: +233 540912864
+  </div>
+
+  <!-- Registration Section -->
+  <section id="registration">
+    <h2>Register for Term 2 (2024/2025 Academic year) Exams Questions</h2>
+    <form id="registrationForm" action="submit.php" method="POST">
+        <label for="name">Name Of School:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="End of term exams question (class 1-JHS 3)">End of term exams question (class 1-JHS 3)</option>
+          <option value="Mid-term exams questions (class 1-JHS 3)">Mid-term exams questions (class 1-JHS 3)</option>
+          <option value="End of term exams question (class 1-6)">End of term exams question (class 1-6)</option>
+          <option value="Mid-term exams questions (class 1-6)">Mid-term exams questions (class 1-6)</option>
+          <option value="Mock For JHS 3 candidates">Mock For JHS 3 candidates</option>
+          <option value="Statistical analysis on test scores">Statistical analysis on test scores</option>
+        </select>
+      
+        <button type="submit">Submit</button>
+      </form>
+    <p id="confirmationMessage" class="hidden">Thanks for your registration, we will contact you soon..</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Success Link Educational Consult. All rights reserved. <br>Powered by Sir Isaac Takyi Boateng</p>
+  </footer>
+
+  <script>
+    document.getElementById('registrationForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const service = document.getElementById('service').value;
+
+      // Display confirmation message
+      const confirmationMessage = document.getElementById('confirmationMessage');
+      confirmationMessage.classList.remove('hidden');
+
+      // Clear form fields
+      document.getElementById('registrationForm').reset();
+
+      // Log form data (you can replace this with an API call or other logic)
+      console.log('Registration Details:', { name, email, phone, service });
+    });
+  </script>
+</body>
+</html>
