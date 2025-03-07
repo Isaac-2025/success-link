@@ -227,6 +227,35 @@
       
         <button type="submit">Submit</button>
       </form>
+
+<div class="form-container">
+    <h2>School Registration Form</h2>
+    <form id="schoolForm" action="https://formsubmit.co/your-email@example.com" method="POST">
+      <!-- School Name -->
+      <div class="form-group">
+        <label for="schoolName">Name of School:</label>
+        <input type="text" id="schoolName" name="schoolName" placeholder="Enter school name" required>
+      </div>
+      <!-- Location -->
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter location" required>
+      </div>
+      <!-- Telephone Number -->
+      <div class="form-group">
+        <label for="telephone">Telephone Number:</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Enter telephone number" required>
+      </div>
+      <!-- Hidden Fields for FormSubmit -->
+      <input type="hidden" name="_subject" value="New School Registration">
+      <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+   
+    
     <p id="confirmationMessage" class="hidden">Thanks for your registration, we will contact you soon..</p>
   </section>
 
