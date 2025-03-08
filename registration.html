@@ -17,22 +17,22 @@
       background-attachment: fixed;
     }
 
-    /* Navigation Bar */
-    nav {
-      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
-      padding: 10px;
+/* Navigation Bar */
+nav {
+      background-color: #007BFF;
+      padding: 5px;
       text-align: center;
     }
 
     nav ul {
-      list-style-type: none;
+      list-style-type:;
       margin: 0;
       padding: 0;
     }
 
     nav ul li {
-     display:column;
-      margin: 20px;
+      display:column;
+      margin: 2px;
     }
 
     nav ul li a {
@@ -49,7 +49,7 @@
     header {
       background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent header */
       color: white;
-      padding: 20px;
+      padding: px;
       text-align: center;
       animation: fadeIn 2s ease-in-out; /* Fade-in animation */
     }
@@ -88,9 +88,9 @@
     section {
       padding: 20px;
       margin: 20px auto;
-      max-width: 600px;
+      max-width: 800px;
       background-color: rgba(122, 246, 255, 0.9); /* Semi-transparent white background */
-      border-radius: 5px;
+      border-radius: 8px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
       animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
     }
@@ -106,8 +106,8 @@
 
     ul li {
       background-color: ;
-      margin: 5px 0;
-      padding: 20px;
+      margin: 10px 0;
+      padding: 5px;
       border-radius: 4px;
     }
 
@@ -176,75 +176,6 @@
         opacity: 1;
       }
     }
-
-    .form-container {
-      background-color:rgba(122, 246, 255, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: ;
-      width: 100%;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      justify-content:left;
-      align-items: left;
-    }
-
-    h2 {
-      text-align: center;
-      color: #1b50c3;
-      margin-bottom: 30px;
-    }
-
-    .form-group {
-      margin-bottom: 15px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-      color: #555;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 16px;
-    }
-
-    .form-group input:focus {
-      border-color: #007bff;
-      outline: none;
-    }
-
-    button[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button[type="submit"]:hover {
-      background-color: #0056b3;
-    }
-
-    #confirmationMessage {
-      display: none;
-      margin-top: 20px;
-      padding: 10px;
-      background-color: #d4edda;
-      color: #155724;
-      border-radius: 5px;
-      text-align: center;
-    
-
   </style>
 </head>
 <body>
@@ -275,26 +206,17 @@
   <!-- Registration Section -->
   <section id="registration">
     <h2>Register for Term 2 (2024/2025 Academic year) Exams Questions</h2>
-    
-<div class="form-container">
-       <form id="schoolForm" action="https://formsubmit.co/Kwakuboatengisaac2@gmail.com" method="POST">
-      <!-- School Name -->
-      <div class="form-group">
-        <label for="schoolName">Name of School:</label>
-        <input type="text" id="schoolName" name="schoolName" placeholder="Enter school name" required>
-      </div>
-      <!-- Location -->
-      <div class="form-group">
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location" placeholder="Enter location" required>
-      </div>
-      <!-- Telephone Number -->
-      <div class="form-group">
-        <label for="telephone">Telephone Number:</label>
-        <input type="tel" id="telephone" name="telephone" placeholder="Enter telephone number" required>
-      </div>
+    <form id="registrationForm" action="submit.php" method="POST">
+        <label for="name">Name Of School:</label>
+        <input type="text" id="name" name="name" required>
       
-    <label for="service">Select Service:</label>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      
+        <label for="service">Select Service:</label>
         <select id="service" name="service" required>
           <option value="End of term exams question (class 1-JHS 3)">End of term exams question (class 1-JHS 3)</option>
           <option value="Mid-term exams questions (class 1-JHS 3)">Mid-term exams questions (class 1-JHS 3)</option>
@@ -304,18 +226,8 @@
           <option value="Statistical analysis on test scores">Statistical analysis on test scores</option>
         </select>
       
-
-        
-      <!-- Hidden Fields for FormSubmit -->
-      <input type="hidden" name="_subject" value="New School Registration">
-      <input type="hidden" name="_next" value="https://https://isaac-2025.github.io/success-link/index.html">
-      <input type="text" name="_honey" style="display:none">
-      <input type="hidden" name="_captcha" value="false">
-      <!-- Submit Button -->
-      <button type="submit">Submit</button>
-    </form>
-   
-    
+        <button type="submit">Submit</button>
+      </form>
     <p id="confirmationMessage" class="hidden">Thanks for your registration, we will contact you soon..</p>
   </section>
 
