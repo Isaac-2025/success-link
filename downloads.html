@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads - Success Link Educational Consult</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      background-image: url('bg.jpg'); /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent header */
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header p {
+      margin: 5px 0 0;
+    }
+
+    /* Downloads Section */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background-color: rgba(122, 246, 255, 0.9); /* Semi-transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1.5s ease-in-out; /* Slide-in animation */
+    }
+
+    h2 {
+      color: #007BFF;
+    }
+
+    .download-item {
+      background-color: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .download-item a {
+      background-color: #007BFF;
+      color: white;
+      padding: 8px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Button hover animation */
+    }
+
+    .download-item a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05); /* Slightly enlarge the button on hover */
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent footer */
+      color: white;
+      position: ;
+      bottom: 0;
+      width: 100%;
+      animation: fadeIn 4s ease-in-out; /* Fade-in animation */
+    }
+
+    /* Keyframes for Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- Link to your homepage -->
+      <li><a href="downloads.html">Downloads</a></li> <!-- Link to the downloads page -->
+      <li><a href="registration.html">Register</a></li> <!-- Link to the registration page -->
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Downloads</h1>
+    <p>Access Schemes of Work and Sample Examination Questions</p>
+  </header>
+
+  <!-- Downloads Section -->
+  <section>
+    <h2>Schemes of Work</h2>
+    <div class="download-item">
+      <span>Mathematics Scheme of Work (Term 2)</span>
+      <a href="math_scheme.pdf" download>Download</a>
+    </div>
+    <div class="download-item">
+      <span>English Scheme of Work (Term 2)</span>
+      <a href="english_scheme.pdf" download>Download</a>
+    </div>
+    <div class="download-item">
+      <span>Science Scheme of Work (Term 2)</span>
+      <a href="science_scheme.pdf" download>Download</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Sample Examination Questions</h2>
+    <div class="download-item">
+      <span>Mathematics Sample Questions (Term 2)</span>
+      <a href="BASIC 4 SAMPLE T1.pdf" download>Download</a>
+    </div>
+    <div class="download-item">
+      <span>English Sample Questions (Term 2)</span>
+      <a href="english_questions.pdf" download>Download</a>
+    </div>
+    <div class="download-item">
+      <span>Science Sample Questions (Term 2)</span>
+      <a href="science_questions.pdf" download>Download</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Success Link Educational Consult. All rights reserved. <br>Powered by Sir Isaac Takyi Boateng</p>
+  </footer>
+</body>
+</html>
